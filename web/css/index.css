@@ -1,0 +1,32 @@
+::-moz-selection,::selection
+{
+  background:#538ec9;
+  color:#FFF;
+}
+
+body
+{
+  background-color:#005a91;
+  font-family:'Proxima Nova';
+}
+
+body footer
+{
+  color:#f0f0f0;
+  padding-top:8em;
+  text-align:center;
+}
+
+main
+{
+  text-align:center;
+  font-size:5em;
+  color: #fff;
+  padding-top:150px;
+}
+
+div
+{
+  margin-left:33%;
+  padding-top:50px;
+}

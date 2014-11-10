@@ -1,0 +1,25 @@
+.text
+{
+  font-family:'Proxima Nova';
+  font-size:14px;
+}
+
+.title
+{
+  font-family:'VAG Rounded';
+  font-size:48px;
+}
+
+::-moz-selection,::selection
+{
+  background:#538ec9;
+  color:#FFF;
+}
+
+body
+{
+  line-height:3.3em;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:4.2em;
+}

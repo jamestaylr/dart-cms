@@ -1,0 +1,102 @@
+#content
+{
+  background:#FFF;
+  display:table-cell;
+  overflow-y:scroll;
+  position:absolute;
+}
+
+#main_wrap
+{
+  display:table;
+}
+
+#sidebar
+{
+  background-color:#2b3d4f;
+  display:table-cell;
+  min-width:200px;
+  visibility:hidden;
+  width:200px;
+}
+
+.close
+{
+  background-image:url(../assets/images/ic_close_36px.svg);
+  background-repeat:no-repeat;
+  background-size:20px 20px;
+  height:20px;
+  margin-left:90%;
+  position:absolute;
+  width:20px;
+}
+
+.text
+{
+  font-family:'Proxima Nova';
+  font-size:20px;
+}
+
+.title
+{
+  font-family:'VAG Rounded';
+  font-size:48px;
+}
+
+::-moz-selection,::selection
+{
+  background:#538ec9;
+  color:#FFF;
+}
+
+body
+{
+  font-family:'Proxima Nova';
+}
+
+nav
+{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  background-color:#538ec9;
+  border-bottom:2px solid #2368AD;
+  box-sizing:border-box;
+  height:55px;
+  overflow:hidden;
+  padding-left:25px;
+  padding-top:18px;
+  width:100%;
+  color:#FFF;
+  font-weight:bold;
+  font-size:20px; 
+}
+
+section
+{
+  background-color:#50657a;
+  border-bottom:1px solid #394857;
+  border-top:1px solid #394857;
+  color:#9db3c9;
+  display:block;
+  font-family:'Proxima Nova';
+  font-size:13px;
+  font-weight:light;
+  height:22px;
+  padding-top:11px;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+textarea
+{
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  border:none;
+  box-shadow:none;
+  display:block;
+  margin-left:5%;
+  outline:none;
+  overflow:hidden;
+  resize:none;
+  width:80%;
+}

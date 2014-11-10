@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<link rel="import" href="packages/polymer/polymer.html">
+<script type="application/dart" src="../dart/index.dart"></script>
+<polymer-element name="auth-input">
+    <template>
+        <input type="text" value="{{username}}">
+        <input type="password" value="{{password}}" on-keypress="{{login}}">
+        <button on-click="{{login}}">Login</button>
+        <br />
+        <div>{{status}}</div>
+        <style>
+            div
+            {
+              color:#ed7874;
+            }
+            
+            input, button
+            {
+              font-family:'Proxima Nova';
+              font-size:14px;
+              padding:5px;
+            }
+        </style>
+    </template>
+</polymer-element>

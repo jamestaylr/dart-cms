@@ -1,0 +1,12 @@
+name: cmseditor
+description: A sample web application
+dependencies:
+  browser: any
+  cookie: any
+  mongo_dart: any
+  polymer: any
+transformers:
+- polymer:
+    entry_points:
+    - web/index.html
+    - web/app/index.html

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dart CMS App</title>
+        <script type="text/javascript" src="document.js"></script>
+        <link type="text/css" rel="stylesheet" href="../css/reset.css">
+        <link type="text/css" rel="stylesheet" href="../fonts/fonts.css">
+        <link type="text/css" rel="stylesheet" href="../css/app.css">
+        <link rel="import" href="../elements/app-elements.html">
+    </head>
+    <body>
+        <nav>
+            Dart CMS
+        </nav>
+        <div id="main_wrap">
+            <div id="sidebar">
+                <section>
+                    templates
+                </section>
+                <sidebar-list></sidebar-list>
+                <section>
+                    elements
+                </section>
+                <draggable-elements></draggable-elements>
+            </div>
+            <div id="content">
+                <nav-list></nav-list>
+                <p></p>
+            </div>
+        </div>
+        <script type="application/dart"> export 'package:polymer/init.dart';</script>
+    </body>
+</html>

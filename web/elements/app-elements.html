@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<link rel="import" href="packages/polymer/polymer.html">
+<script type="application/dart" src="../dart/app.dart"></script>
+<polymer-element name="sidebar-list">
+    <template>
+        <ul>
+            <template repeat="{{name in names | enumerate}}">
+                <li>
+                    <div value="{{name.value.name}}" on-click="{{deletePage}}">
+                    </div>
+                    {{name.value.name}}
+                </li>
+            </template>
+            <input placeholder="Type new page names here" type="text" value="{{value}}" on-keypress="{{addPage}}">
+        </ul>
+        <style>
+            input
+            {
+              -moz-border-radius:2px;
+              -webkit-border-radius:2px;
+              background-color:transparent;
+              border:2px solid #DDE8F4;
+              border-radius:2px;
+              color:#fff;
+              font-family:'Proxima Nova';
+              font-size:13px;
+              height:20px;
+              margin:10px;
+              padding:4px 10px;
+              text-align:left;
+              width:155px;
+            }
+            
+            li
+            {
+              -moz-border-radius:2px;
+              -webkit-border-radius:2px;
+              background-color:#538ec9;
+              border-radius:2px;
+              color:#FFF;
+              display:block;
+              font-family:'Proxima Nova';
+              font-size:15px;
+              font-weight:light;
+              height:22px;
+              margin:10px;
+              padding:8px 10px 0;
+              text-align:left;
+              text-decoration:none;
+              text-transform:capitalize;
+            }
+            
+            ul
+            {
+              margin:0;
+              padding:0;
+            }
+            
+            ul > li > div
+            {
+              background-image:url(../assets/images/ic_cancel_36px.svg);
+              background-repeat:no-repeat;
+              background-size:20px 20px;
+              cursor:pointer;
+              height:20px;
+              margin-left:145px;
+              margin-top:-3px;
+              opacity:0.25;
+              position:absolute;
+              transition:opacity .25s linear;
+              width:20px;
+            }
+            
+            ul > li:hover > div
+            {
+              opacity:0.50;
+              transition:opacity .25s linear;
+            }
+        </style>
+    </template>
+</polymer-element>
+<polymer-element name="draggable-elements">
+    <template>
+        <br />
+        <div id="title" draggable="true" style="background-image:url('../assets/images/ic_text_format_48px.svg');"></div>
+        <div id="text" draggable="true" style="background-image:url('../assets/images/ic_sort_48px.svg');"></div>
+        <br />
+        <style>
+            div
+            {
+              -moz-border-radius:2px;
+              -webkit-border-radius:2px;
+              background-color:#2b3d4f;
+              border:2px solid #FFF;
+              float:right;
+              height:50px;
+              margin-right:20px;
+              width:50px;
+            }
+            
+            div:nth-child(odd)
+            {
+              float:none;
+              margin-left:20px;
+            }
+        </style>
+    </template>
+</polymer-element>
+<polymer-element name="nav-list">
+    <template>
+        <ul>
+            <template repeat="{{name in names | enumerate}}">
+                <div><input type="checkbox" on-click="{{callPage}}" id="{{name.index}}" value="{{name.value.name}}">
+                    <label for="{{name.index}}">{{name.value.name}}</label>
+                </div>
+            </template>
+        </ul>
+        <br /><br /><br />
+        <script></script>
+        <style>
+            input[type=checkbox]
+            {
+              display:none;
+            }
+            
+            input[type=checkbox] + label
+            {
+              -moz-border-radius:2px;
+              -webkit-border-radius:2px;
+              background-color:transparent;
+              border:2px solid #97a9ba;
+              border-radius:2px;
+              color:#97a9ba;
+              float:left;
+              font-family:'Proxima Nova';
+              font-size:15px;
+              height:20px;
+              margin:10px;
+              padding:10px 10px 4px;
+              text-align:center;
+              text-transform:capitalize;
+              width:80px;
+            }
+            
+            input[type=checkbox]:checked + label
+            {
+              background-color:#97a9ba;
+              border:2px solid #8497ab;
+              color:#fff;
+            }
+        </style>
+    </template>
+</polymer-element>

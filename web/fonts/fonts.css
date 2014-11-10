@@ -1,0 +1,48 @@
+<!-- Proxima Nova Font Definitions -->
+@font-face {
+font-family: 'Proxima Nova';
+src: url("../fonts/ProximaNova-Reg.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'Proxima Nova';
+font-weight: light;
+src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'Proxima Nova';
+font-weight: light;
+font-style: italic;
+src: url("../fonts/ProximaNova-Lightlt.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'Proxima Nova';
+font-style: italic;
+src: url("../fonts/ProximaNova-Reglt.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'Proxima Nova';
+font-weight: bold;
+src: url("../fonts/ProximaNova-Sbold.otf") format("opentype");
+}
+
+<!-- VAG Rounded Font Definition -->
+@font-face {
+font-family: 'VAG Rounded';
+font-weight: bold;
+src: url("../fonts/VAGRoundedStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'VAG Rounded';
+font-weight: light;
+src: url("../fonts/VAGRoundedStd-Light.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'VAG Rounded';
+src: url("../fonts/VAGRoundedStd-Thin.otf") format("opentype");
+}
